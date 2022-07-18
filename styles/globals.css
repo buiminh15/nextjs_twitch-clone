@@ -1,16 +1,28 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-black text-white scroll-smooth
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.hover-transition {
+    @apply duration-200 ease-out
 }
 
-* {
-  box-sizing: border-box;
+::-webkit-scrollbar {
+    @apply w-3
+}
+
+::-webkit-scrollbar-track{
+    @apply bg-purple-900 rounded-full my-2
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-purple-500 rounded-full
+
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-purple-600 rounded-full
+
 }
