@@ -25,16 +25,24 @@ function Account() {
     );
   }
   return (
-    <div className="max-w-[400px] w-full mx-auto mt-20">
+    <div className="max-w-[400px] w-full mx-auto mt-[50px] h-[calc(100vh-50px)]">
       <h2 className="text-2xl font-bold">Login</h2>
       <p className="my-4">Choose the account you want to sign in with.</p>
       <div className="flex flex-col gap-4">
-        <Button Icon={AiOutlineGithub} style="bg-slate-700 hover:bg-slate-800" handleClick={signIn}>
+        <Button
+          Icon={AiOutlineGithub}
+          style="bg-slate-700 hover:bg-slate-800"
+          handleClick={signIn}
+        >
           <p>
             Sign in with <span className="font-bold">Github</span>
           </p>
         </Button>
-        <Button Icon={AiOutlineGoogle} style="bg-sky-700 hover:bg-sky-800" handleClick={signIn}>
+        <Button
+          Icon={AiOutlineGoogle}
+          style="bg-sky-700 hover:bg-sky-800"
+          handleClick={signIn}
+        >
           <p>
             Sign in with <span className="font-bold">Google</span>
           </p>

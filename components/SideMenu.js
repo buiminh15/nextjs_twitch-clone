@@ -36,13 +36,17 @@ function RecommendedChannels() {
       <Title title="Recommended Channels" Icon={DesktopComputerIcon} />
       <ul className="flex flex-col gap-2">
         {rec_channels.map((item) => (
-          <MenuItem
+          <li
             key={item.id}
-            avatar={item.avatar}
-            username={item.username}
-            rank={item.rank}
-            game_name={item.game_name}
-          />
+            className="px-2 hover:bg-slate-600 hover-transition"
+          >
+            <MenuItem
+              avatar={item.avatar}
+              username={item.username}
+              rank={item.rank}
+              game_name={item.game_name}
+            />
+          </li>
         ))}
       </ul>
     </>
@@ -55,13 +59,17 @@ function TopChannels() {
       <Title title="Top Channels" Icon={DesktopComputerIcon} />
       <ul className="flex flex-col gap-2">
         {top_channels.map((item) => (
-          <MenuItem
+          <li
             key={item.id}
-            avatar={item.avatar}
-            username={item.username}
-            rank={item.rank}
-            game_name={item.game_name}
-          />
+            className="px-2 hover:bg-slate-600 hover-transition"
+          >
+            <MenuItem
+              avatar={item.avatar}
+              username={item.username}
+              rank={item.rank}
+              game_name={item.game_name}
+            />
+          </li>
         ))}
       </ul>
     </>
@@ -70,7 +78,10 @@ function TopChannels() {
 
 function SideMenu() {
   return (
-    <aside id="side-menu" className="fixed w-14 sm:w-16 xl:w-[15rem] h-screen p-2 bg-[#0e0e10] overflow-y-auto">
+    <aside
+      id="side-menu"
+      className="fixed w-14 sm:w-16 xl:w-[15rem] h-screen py-2 bg-[#0e0e10] pl-2 content"
+    >
       <RecommendedChannels />
       <div className="mt-4"></div>
       <TopChannels />

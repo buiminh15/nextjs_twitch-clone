@@ -1,14 +1,13 @@
-import React from 'react'
-import Main from './Main'
-import SideMenu from './SideMenu'
+import React from "react";
+import SideMenu from "./SideMenu";
 
-function Layout() {
+function Layout({ children }) {
   return (
-    <div className='w-full min-h-screen flex '>
+    <div className="pt-[50px] w-full flex">
       <SideMenu />
-      <Main />
+      <div className=" ml-14 sm:ml-16 xl:ml-[15rem] w-full h-full">{children}</div>
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

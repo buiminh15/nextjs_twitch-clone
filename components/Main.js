@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Main() {
+function MainHome() {
   return (
     <main className='flex-1'>Main</main>
   )
 }
 
-export default Main
+export default MainHome

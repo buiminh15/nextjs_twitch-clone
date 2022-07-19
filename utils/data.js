@@ -103,5 +103,21 @@ export const top_channels = [
     game_name: 'Namfix',
     rank: 16,
   },
+  {
+    id: 5,
+    avatar:
+      'https://robohash.org/quaealiquidvoluptates.png?size=50x50&set=set1',
+    username: 'rmcclymond3',
+    game_name: 'Namfix',
+    rank: 16,
+  },
+  {
+    id: 6,
+    avatar:
+      'https://robohash.org/quaealiquidvoluptates.png?size=50x50&set=set1',
+    username: 'rmcclymond3',
+    game_name: 'Namfix',
+    rank: 16,
+  },
 
 ];
