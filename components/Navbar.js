@@ -10,18 +10,22 @@ const menu = [
   {
     id: 1,
     name: "Home",
+    href: "/",
   },
   {
     id: 2,
     name: "Live Channels",
+    href: "account",
   },
   {
     id: 3,
     name: "Top Categories",
+    href: "account",
   },
   {
     id: 4,
     name: "Account",
+    href: "account",
   },
 ];
 
@@ -132,7 +136,7 @@ function Navbar() {
       >
         {menu.map((item) => (
           <li key={item.id} className="text-3xl font-bold cursor-pointer">
-            {item.name}
+            <Link href={item.href}>{item.name}</Link>
           </li>
         ))}
       </ul>

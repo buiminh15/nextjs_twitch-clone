@@ -26,3 +26,7 @@ html {
     @apply bg-purple-600 rounded-full
 
 }
+
+#side-menu::-webkit-scrollbar {
+    @apply w-2
+}

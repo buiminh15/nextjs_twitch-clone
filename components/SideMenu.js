@@ -70,7 +70,7 @@ function TopChannels() {
 
 function SideMenu() {
   return (
-    <aside className="fixed w-14 sm:w-16 xl:w-[15rem] h-screen p-2 bg-[#0e0e10] overflow-y-auto">
+    <aside id="side-menu" className="fixed w-14 sm:w-16 xl:w-[15rem] h-screen p-2 bg-[#0e0e10] overflow-y-auto">
       <RecommendedChannels />
       <div className="mt-4"></div>
       <TopChannels />
